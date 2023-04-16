@@ -13,7 +13,6 @@ function createAndWriteLog(resultBeforeCalc, operator, calcNum) {
     outputResult(currentResult, calcDesc); // from vendor file
 }
 
-// Gets and creates Object logEntry
 function writeToLog(opId, prevResult, opNum, newResult) {
     const logEntry = {
         operation: opId,
@@ -25,20 +24,27 @@ function writeToLog(opId, prevResult, opNum, newResult) {
     console.log(logEntries)
 }
 
-function add() {
+function calculateResult(calculationType) {
     const enteredNumber = getUserNumberInput() 
     const initialResult = currentResult;
-    currentResult += enteredNumber;
-    createAndWriteLog(initialResult, '+', enteredNumber)
-    writeToLog('ADD', initialResult, enteredNumber, currentResult)
+    let mathOperator;
+    if (calculationType === 'ADD') {
+        currentResult += enteredNumber;
+        mathOperator = '+'
+    } else {
+        currentResult -= enteredNumber;
+        mathOperator = '-'
+    }
+    createAndWriteLog(initialResult, mathOperator, enteredNumber)
+    writeToLog(calculationType, initialResult, enteredNumber, currentResult) 
+}
+
+function add() {
+    calculateResult('ADD')
 }
 
 function subtract() {
-    const enteredNumber = getUserNumberInput() 
-    const initialResult = currentResult;
-    currentResult -= enteredNumber;
-    createAndWriteLog(initialResult, '-', enteredNumber)
-    writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult)
+    calculateResult('SUBTRACT')
 }
 
 function multiply() {
