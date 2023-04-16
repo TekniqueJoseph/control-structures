@@ -76,3 +76,19 @@ divideBtn.addEventListener('click', divide);
 // solve()
 // console.log(numbers)
 
+let userCategory; // should be 'child', 'adult' or 'senior'
+let age = 30;
+
+function solve() {
+    if (age < 18) {
+        userCategory = 'child'
+        return userCategory
+    } else if (age >= 18 & age < 65) {
+        userCategory = 'adult'
+        return userCategory
+    } else {
+        userCategory = 'senior'
+        return userCategory
+    }
+}
+console.log(solve())
