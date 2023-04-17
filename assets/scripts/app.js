@@ -103,10 +103,16 @@ let user = {
     blog: ['Lyrical Traits', 'Dj Essentials']
 }
 console.log(user)
-console.log(Object.keys(user))
-console.log(Object.values(user))
-console.log(user.blog[0])
+console.log(user.name)
+// user.age = 51
+console.log(user.age)
+console.log(user['name'])
+user['name'] = 'Mecca'
+console.log(user['name'])
+// console.log(Object.keys(user))
+// console.log(Object.values(user))
+// console.log(user.blog[0])
 
-setTimeout (() => {
-    console.log('Waited 5 Seconds')
-}, 5000);
+// setTimeout (() => {
+//     console.log('Waited 5 Seconds')
+// }, 5000);
