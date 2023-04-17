@@ -24,6 +24,8 @@ function writeToLog(opId, prevResult, opNum, newResult) {
     console.log(logEntries)
 }
 
+
+
 function calculateResult(calculationType) {
     const enteredNumber = getUserNumberInput() 
     const initialResult = currentResult;
@@ -92,6 +94,18 @@ function solve() {
     }
 }
 console.log(solve())
+
+let user = {
+    name: 'Butterfly',
+    age: 50,
+    email: 'mecca@thebronx.com',
+    location: 'Kemet',
+    blog: ['Lyrical Traits', 'Dj Essentials']
+}
+console.log(user)
+console.log(Object.keys(user))
+console.log(Object.values(user))
+console.log(user.blog[0])
 
 setTimeout (() => {
     console.log('Waited 5 Seconds')
