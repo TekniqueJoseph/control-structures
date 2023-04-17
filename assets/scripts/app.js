@@ -106,8 +106,13 @@ let user = {
     },
     phrase2: function() {
         console.log('93 million miles above these devils')
+    },
+    logBlog: function(){
+        console.log(this.blog[1])
     } 
 }
 
 user.phrase()
 user.phrase2()
+user.logBlog()
+
