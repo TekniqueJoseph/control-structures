@@ -93,7 +93,7 @@ function solve() {
         return userCategory
     }
 }
-console.log(solve())
+// console.log(solve())
 
 let user = {
     name: 'Butterfly',
@@ -106,9 +106,15 @@ console.log(user)
 console.log(user.name)
 // user.age = 51
 console.log(user.age)
-console.log(user['name'])
+
+console.log(user['location'])
 user['name'] = 'Mecca'
 console.log(user['name'])
+
+console.log(typeof user)
+
+
+
 // console.log(Object.keys(user))
 // console.log(Object.values(user))
 // console.log(user.blog[0])
