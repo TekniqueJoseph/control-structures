@@ -92,3 +92,7 @@ function solve() {
     }
 }
 console.log(solve())
+
+setTimeout (() => {
+    console.log('Waited 5 Seconds')
+}, 5000);
