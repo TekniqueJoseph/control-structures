@@ -115,6 +115,24 @@ let user = {
         })
     } 
 }
+console.log(user)
+console.log(user.name)
+// user.age = 51
+console.log(user.age)
+
+console.log(user['location'])
+user['name'] = 'Mecca'
+console.log(user['name'])
+
+console.log(typeof user)
+
+// console.log(Object.keys(user))
+// console.log(Object.values(user))
+// console.log(user.blog[0])
+
+// setTimeout (() => {
+//     console.log('Waited 5 Seconds')
+// }, 5000);
 
 user.phrase1()
 user.phrase2()
