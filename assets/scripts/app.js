@@ -100,19 +100,23 @@ let user = {
     age: 50,
     email: 'mecca@thebronx.com',
     location: 'Kemet',
-    blog: ['Lyrical Traits', 'Dj Essentials'],
-    phrase: function() {
+    blogs:['Good Voice', 'Smooth Flow'],
+    phrase1: function() {
         console.log('68 inches above sea level');
     },
     phrase2: function() {
         console.log('93 million miles above these devils')
     },
     logBlog: function(){
-        console.log(this.blog[1])
+        // console.log(this.blogs[1])
+        console.log('This emcee is dope.')
+        this.blogs.map(blog => {
+            console.log(blog)
+        })
     } 
 }
 
-user.phrase()
+user.phrase1()
 user.phrase2()
 user.logBlog()
 
