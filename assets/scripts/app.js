@@ -100,25 +100,14 @@ let user = {
     age: 50,
     email: 'mecca@thebronx.com',
     location: 'Kemet',
-    blog: ['Lyrical Traits', 'Dj Essentials']
+    blog: ['Lyrical Traits', 'Dj Essentials'],
+    phrase: function() {
+        console.log('68 inches above sea level');
+    },
+    phrase2: function() {
+        console.log('93 million miles above these devils')
+    } 
 }
-console.log(user)
-console.log(user.name)
-// user.age = 51
-console.log(user.age)
 
-console.log(user['location'])
-user['name'] = 'Mecca'
-console.log(user['name'])
-
-console.log(typeof user)
-
-
-
-// console.log(Object.keys(user))
-// console.log(Object.values(user))
-// console.log(user.blog[0])
-
-// setTimeout (() => {
-//     console.log('Waited 5 Seconds')
-// }, 5000);
+user.phrase()
+user.phrase2()
